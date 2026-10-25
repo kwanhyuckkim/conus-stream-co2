@@ -7,7 +7,7 @@ A Python port of Craig Brinkerhoff's CONUS_carbon R model, which simulates CO2 i
 
 All scientific credit for the model goes to those authors. I ported the forward model to Python so I could run parameter sweeps and calibration experiments for my postdoc work with Matt Winnick at UMass Amherst. The calibration runs and their results are not in this repo.
 
-## What's here
+## What's in the repo
 
 - `conus_carbon/`: the model (steady-state pCO2 for each reach, solved from upstream to downstream over a basin), the calibration cost, hydraulics, I/O, a parameter sweep, and a small synthetic basin for testing
 - `tests/`: physics sanity checks and a regression test
@@ -21,7 +21,7 @@ On the basins I checked, the Python and R outputs agree to about 1e-7 ppm. The c
 
 `setup_hydrography` (reading the NHD-HR geodatabases) is not ported. Both models are fed the hydrography table that the R code prepares.
 
-## Running it
+## Quick start
 
 ```bash
 pip install -e .

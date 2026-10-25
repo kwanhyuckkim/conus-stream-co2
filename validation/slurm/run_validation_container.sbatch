@@ -39,7 +39,6 @@ fi
 export CONUS_SRC="$RSRC"                       # <- R sources the patched copy, not Craig's read-only src
 # (b) CONUS boundary shapefile: setup_hydrography.R reads it by RELATIVE path data/cb_2018_us_nation_20m.shp
 [ -f data/cb_2018_us_nation_20m.shp ] || cp "$CONUS_DATA_ROOT"/other_shapefiles/cb_2018_us_nation_20m.* data/ 2>/dev/null || true
-# -----------------------------------------------------------------------------------------------
 
 echo "########## STEP 1: R export (rocker apptainer; ${CONUS_PARAM_MODE} params) ##########"; date
 apptainer exec --bind "$CONUS_APPTAINER_BIND" "$CONUS_R_SIF" \
