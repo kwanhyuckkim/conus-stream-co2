@@ -1,0 +1,5 @@
+# generated reference/python CSVs + report
+out/
+# SLURM runtime logs (keep the dir via .gitkeep)
+logs/*
+!logs/.gitkeep
